@@ -6,8 +6,8 @@ if base_url.endswith('/'):
 
 
 class Config:
-    MODEL = os.environ.get('MODEL', "llama2")
-    EMBEDDING_MODEL_NAME = os.environ.get('EMBEDDING_MODEL_NAME', "all-MiniLM-L6-v2")
+    MODEL = os.environ.get('MODEL', "snickers8523/llama3-taide-lx-8b-chat-alpha1-q4-0")
+    EMBEDDING_MODEL_NAME = os.environ.get('EMBEDDING_MODEL_NAME', "BAAI/bge-large-en-v1.5")
     OLLAMA_API_BASE_URL = base_url
     HUGGING_FACE_EMBEDDINGS_DEVICE_TYPE = os.environ.get('HUGGING_FACE_EMBEDDINGS_DEVICE_TYPE',
                                                          "cpu")
